@@ -1,0 +1,45 @@
+.patient-wrapper{
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  gap: 30px;
+}
+
+.patient-wrapper > p:first-child{
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.patient-details{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(153, 143, 143);
+  border-radius: 15px;
+  padding: 30px 0;
+  gap: 25px;
+  overflow-y: auto;
+}
+
+.patient-details > button{
+  width: 25%;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.patient-details > button:hover{
+  cursor: pointer;
+  background-color: rgb(204, 180, 180);
+}
+
+.patient-display-box{
+  background-color: rgb(214, 199, 199);
+  height: 350px;
+  width: 90%;
+  border-radius: 15px;
+}

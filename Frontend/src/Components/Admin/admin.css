@@ -1,0 +1,173 @@
+.admin-wrapper{
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  gap: 30px;
+}
+
+.admin-wrapper > p:first-of-type{
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.display{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(153, 143, 143);
+  border-radius: 15px;
+  padding: 20px 0;
+}
+
+.display-btns{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 30%;
+}
+
+.display-btns > button{
+  padding: 15px 20px;
+  width: 200px;
+  border-radius: 15px;
+}
+
+.display-btns > button:hover{
+  cursor: pointer;
+  background-color: rgb(204, 180, 180);
+}
+
+.display-box{
+  background-color: rgb(214, 199, 199);
+  height: 300px;
+  width: 65%;
+  border-radius: 15px;
+  overflow-y: auto;
+}
+
+/* ROOMS  */
+
+.rooms {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background-color: rgb(153, 143, 143);
+  border-radius: 15px;
+  padding: 20px 0;
+}
+
+.er-rooms, .pt-rooms{
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btns-row{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 35px;
+}
+
+.btns-row > input{
+  padding: 15px 20px;
+  border-radius: 10px;
+  width: 35%;
+  outline: none;
+}
+
+.btns-row > button{
+  padding: 15px 20px;
+  border-radius: 20px;
+}
+
+.btns-row > button:hover{
+  cursor: pointer;
+  background-color: rgb(204, 180, 180);
+}
+
+/* PATIENTS  and DOCTORS*/
+
+.patients, .doctors{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background-color: rgb(153, 143, 143);
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.add-patient, .del-patient, .edit-patient,
+.add-doctor, .del-doctor, .edit-doctor{
+  width: 88%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 15px;
+}
+
+.add-pt-btns, .del-pt-btns, .edit-pt-btns,
+.add-dr-btns, .del-dr-btns, .edit-dr-btns{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 25px;
+}
+
+.add-pt-btns > input, 
+.del-pt-btns > input, 
+.edit-pt-btns > input,
+.add-dr-btns > input, 
+.del-dr-btns > input, 
+.edit-dr-btns > input{
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+
+.add-pt-btns > button, 
+.del-pt-btns > button, 
+.edit-pt-btns > button,
+.add-dr-btns > button, 
+.del-dr-btns > button, 
+.edit-dr-btns > button {
+  padding: 15px 20px;
+  border-radius: 20px;
+}
+
+.add-pt-btns > button:hover, 
+.del-pt-btns > button:hover, 
+.edit-pt-btns > button:hover,
+.add-dr-btns > button:hover, 
+.del-dr-btns > button:hover, 
+.edit-dr-btns > button:hover {
+  cursor: pointer;
+  background-color: rgb(204, 180, 180);
+}
+
+.home-btn{
+  padding: 20px 50px;
+  border-radius: 20px;
+}
+
+.home-btn:hover{
+  cursor: pointer;
+  background-color:rgb(153, 143, 143);
+}
