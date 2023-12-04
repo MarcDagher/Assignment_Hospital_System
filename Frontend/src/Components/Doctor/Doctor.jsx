@@ -23,7 +23,7 @@ const Doctor = () => {
         </div>
     </form>
 
-      <Link to="/signin">
+      <Link to="/">
         <button className="home-btn">Log In Page</button>
       </Link>
     </div>

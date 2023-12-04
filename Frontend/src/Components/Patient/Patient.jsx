@@ -10,7 +10,7 @@ const Patient  = () => {
 
           </div>
       </div>
-      <Link to="/signin">
+      <Link to="/">
         <button className="home-btn">Log In Page</button>
       </Link>
     </div>
