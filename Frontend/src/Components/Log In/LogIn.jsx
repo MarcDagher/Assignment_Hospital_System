@@ -38,7 +38,7 @@ const LogIn = () => {
           </div> 
 
           <div className="buttons-wrap">
-            <Link to="/">
+            <Link to="/admin">
               <button type="submit" className='login-btn'>Log In as Admin</button>
             </Link>
             <Link to="/doctor">
