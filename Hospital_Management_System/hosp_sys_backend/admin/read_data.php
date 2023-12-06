@@ -60,6 +60,8 @@ include "../connection.php";
       $arr[] = ["room" => $room, "user" => $name[0][0], "room type" => $type, "status" => $status ]; 
     };
 
+    // NEEDS ADJUSTING FOR DISPLAY IN REACT
+    //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     for ($i=0; $i < count($arr); $i++)
     echo json_encode($arr[$i]) . "\n";
   }
@@ -86,6 +88,8 @@ include "../connection.php";
       $arr[] = ["room" => $room, "user" => $name[0][0], "room type" => $type, "status" => $status ]; 
     };
 
+    // NEEDS ADJUSTING FOR DISPLAY IN REACT
+    //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     for ($i=0; $i < count($arr); $i++)
     echo json_encode($arr[$i]) . "\n";
   }

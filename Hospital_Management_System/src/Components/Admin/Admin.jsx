@@ -45,9 +45,32 @@ const Admin = () => {
             <button type="button" onClick={(e) => {handleClick("show_rooms=patient")}} className="dis-btn">Patients' Rooms</button>
         </div>
         <div className="display-box">
-            <div className="data">
-
-            </div>
+        <div className="data">
+            {data.map((item, index) => (
+              <div key={index}>
+                {type === "show_patients" && (
+                  <>
+                    <p>Name: {item.user_name} - Medication: {item.medication} - Case: {item.patient_case} - Join Date: {item.join_date}</p>
+                  </>
+                )}
+                {type === "show_doctors" && (
+                  <>
+                    <p>Name: {item.user_name} - User Type: {item.user_type} - Department: {item.department} - Join Date: {item.join_date}</p>
+                  </>
+                )}
+                {type === "show_rooms=patient" && (
+                  <>
+                    <p>Name: {item.room} - Room Status: {item.status} - patient: {item.user}</p>
+                  </>
+                )}
+                {type === "show_rooms=emergency" && (
+                  <>
+                    <p>Name: {item.room} - Room Status: {item.status} - patient: {item.user}</p>
+                  </>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
     </div>
  
