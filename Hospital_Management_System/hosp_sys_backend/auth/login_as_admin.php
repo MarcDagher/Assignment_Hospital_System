@@ -1,6 +1,10 @@
 <?php
 include "../connection.php";
 
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: POST, GET");
+header("Access-Control-Allow-Headers: Content-Type");
+
 $admin = $_POST["user_name"];
 $password = $_POST["user_password"];
 
@@ -14,7 +18,7 @@ if ($admin !== $arr['ad_username']){
     echo "User not found";
 } else {
   if (password_verify($password, $arr['ad_password'])){
-    echo "Welcome boss";
+    echo "Welcome Admin";
   } else {
     echo "Wrong Credentials";
   }

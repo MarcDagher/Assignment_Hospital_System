@@ -4,16 +4,13 @@ import { Link } from "react-router-dom"
 import axios from "axios"
 
 const SignUp = () => {
-  const [form, setForm] = useState({
-    user_name : "",
-    user_password : ""
-  })
+  const [form, setForm] = useState({user_name : "", user_password : ""})
   const [success, setSuccess] = useState('')
 
   const Handle_Submit = async () => {
     try{ const response = await axios.request(
       {
-      url: `http://localhost/HOSPITAL_MANAGEMENT_SYSTEM/hosp_sys_backend/auth/signup.php`,
+      url: `http://localhost/Hospital_system/Hospital_Management_System/hosp_sys_backend/auth/signup.php`,
       data: {...form},
       method:'POST',
       headers: {"Content-Type":"application/x-www-form-urlencoded"}  
