@@ -1,17 +1,48 @@
 import { Link } from "react-router-dom"
 import "./admin.css"
+import { useEffect, useState } from "react"
+import axios from "axios"
 
 const Admin = () => {
+
+  const [type, setType] = useState(null);
+  const [data, setData] = useState([])
+
+  const send_request = async () => {
+    try {
+      const request = await axios.request({
+      url : `http://localhost/Hospital_System/Hospital_Management_System/hosp_sys_backend/admin/read_data.php?${type}=true`,
+      method : "GET",
+      headers : {"Content-Type" : "application/x-www-form-urlencoded"} 
+    })
+    return request.data
+  }
+  catch (error) {
+    console.log(error)
+  }
+}
+
+  const handleClick = (type) => {
+    setType(type)
+  }
+
+  useEffect(() => {
+    if (type){
+      send_request()
+      .then((res) => {setData(res); console.log(res);})
+      .catch((error) => {console.log(error)})
+    }
+  },[type])
 
   return <>
   <div className="admin-wrapper">
     <p>Admins Page</p>
     <div className="display">
         <div className="display-btns">
-            <button  className="dis-btn">Show Patients</button>
-            <button  className="dis-btn">Show Doctors</button>
-            <button  className="dis-btn">Emergency Rooms</button>
-            <button  className="dis-btn">Patients' Rooms</button>
+            <button type="button" onClick={(e) => {handleClick("show_patients")}} className="dis-btn">Show Patients</button>
+            <button  type="button" onClick={(e) => {handleClick("show_doctors")}} className="dis-btn">Show Doctors</button>
+            <button type="button" onClick={(e) => {handleClick("show_rooms=emergency")}} className="dis-btn">Emergency Rooms</button>
+            <button type="button" onClick={(e) => {handleClick("show_rooms=patient")}} className="dis-btn">Patients' Rooms</button>
         </div>
         <div className="display-box">
             <div className="data">
