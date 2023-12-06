@@ -20,7 +20,7 @@ const Admin = () => {
         </div>
     </div>
  
-    <form action="" method="post" className="rooms">
+    <form method="post" className="rooms">
           <div className="er-rooms">
             <p>Assign To Emergency Room</p>
             <div className="btns-row">
@@ -39,7 +39,7 @@ const Admin = () => {
           </div>
     </form>
 
-    <form action="" method="post" className="patients">
+    <form method="post" className="patients">
         <div className="add-patient">
           <p>New Patient</p>
           <div className="add-pt-btns">
@@ -69,7 +69,7 @@ const Admin = () => {
         </div>
     </form>
 
-    <form action="" method="post" className="doctors">
+    <form method="post" className="doctors">
         <div className="add-doctor">
           <p>New Doctor</p>
           <div className="add-dr-btns">
