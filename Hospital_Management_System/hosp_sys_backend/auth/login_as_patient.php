@@ -20,9 +20,9 @@ if (empty($fetch_user_record)){ // if no users
 else{ // if user is found check password
 
   if (password_verify($password, $fetch_user_record['user_password'])){
-    echo "Welcome Patient";
+    echo "Welcome";
   }
   else {
-    echo "Wrong credentials" . "\n";
+    echo "Wrong Credentials";
   }
 }

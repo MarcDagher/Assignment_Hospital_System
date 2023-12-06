@@ -14,11 +14,11 @@ $arr = $result -> fetch_assoc();
 
 
 if (empty($arr)){
-  echo "Doctor not found";
+  echo "User not found";
 } else {
   if (password_verify($password, $arr['user_password'])){
-    echo "Welcome doctor";
+    echo "Welcome";
   } else {
-    echo "Wrong credentials";
+    echo "Wrong Credentials";
   }
 }

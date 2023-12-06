@@ -18,7 +18,7 @@ if ($admin !== $arr['ad_username']){
     echo "User not found";
 } else {
   if (password_verify($password, $arr['ad_password'])){
-    echo "Welcome Admin";
+    echo "Welcome";
   } else {
     echo "Wrong Credentials";
   }
