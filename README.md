@@ -1,1 +1,1 @@
-<h1 align="center">React app with php backend using MySqli for CRUD</h1>
+<h1 align="center">PHP backend using MySqli for CRUD</h1>
